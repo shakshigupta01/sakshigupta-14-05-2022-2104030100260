@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style type="text/css">
+        *{
+            text-align: left;
+            font-size: 20px;
+            color:blue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .video
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+            background-size: cover;
+        }
+
+        .backgroud
+        {
+            position: fixed;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+        h1
+        {
+            color:greenyellow;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <div class="video">
+        <video src="C:\Users\hp\Desktop\shivkumar\Snapchat\sakshi.mp4" autoplay muted loop class="background"></video>
+    </div>
+    <div class="form">
+        <form>
+            <div class="name">
+            NAME:<input type="text"></div><br>
+            <div class="phone">
+            Phone No.:<input type="number"></div><br>
+            <div class="dob">
+            DOB: <input type="date"></div><br>
+            Gender: <input type="radio" name="G1">Male <input type="radio" name="G1">Female<br><br>
+            Hobby: <input type="checkbox">playing <input type="checkbox">dancing<input type="checkbox">yoga <br><br>
+            Address:<br><textarea rows="5" placeholder="Enter Address Here.." maxlength="200"></textarea><br/><br>
+            <input type="submit" class="sumbit">&nbsp<input type="reset" class="reset">
+        </form>
+    </div>
+</body>
+</html>
